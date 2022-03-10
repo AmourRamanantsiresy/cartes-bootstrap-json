@@ -1,0 +1,201 @@
+/* les cartes bootstrapes */
+
+body {
+    background: linear-gradient(90deg, rgba(255, 123, 123, 1) 0%, rgba(116, 131, 255, 1) 82%);
+    overflow-x: hidden;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+#cartes {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+
+#cartes>div {
+    height: 300px;
+    position: relative;
+    width: 250px;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 20px;
+    text-align: center;
+    background: linear-gradient(-45deg, rgba(216,160,32,1) 12%, rgba(255,255,255,1) 12%, rgba(255,255,255,1) 66%, rgba(216,160,32,1) 66%);
+    transition: scale 500ms;
+}
+
+#cartes>div:hover{
+    scale: 1.1;
+}
+
+.information {
+    margin-top: 50px;
+}
+
+.information p {
+    margin: 0;
+    cursor: pointer;
+}
+
+#cartes>div>.information a {
+    text-decoration: none;
+    color: blue;
+    position: relative;
+    top: 20px;
+    padding: 5px 10px 5px 10px;
+    border-radius: 15px;
+}
+
+#cartes>div>.information a>button{
+    border: none;
+    background: none;
+    outline: none;
+    color: blue;
+    height: 30px;
+    width: 150px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: scale 500ms;
+}
+
+#cartes>div>.information a>button:hover{
+    scale: 1.2;
+}
+
+/* les cartes bootstrapes */
+
+
+/* barre de navigation */
+
+nav{
+    width: 100vw;
+    height: 70px;
+    background: linear-gradient(90deg, rgba(255, 123, 123, 1) 0%, rgba(116, 131, 255, 1) 82%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+nav h1{
+    position: absolute;
+    right: 5%;
+    scale: 2;
+    top: 0;
+    cursor: pointer;
+    transition: color 500ms;
+}
+nav h1:hover{
+    color: white;
+}
+
+nav h2{
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+/* barre de navigation */
+
+/* ajouter un utilisateur */
+
+.ajoutDiv{
+    background: linear-gradient(90deg, rgba(255, 123, 123, 1) 0%, rgba(116, 131, 255, 1) 82%);
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    top: -70%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 15px;
+}
+
+.ajoutDiv input{
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 1px solid white;
+    text-align: center;
+    margin: 10px;
+    width: 200px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: font-size 100ms;
+}
+
+.ajoutDiv input:focus{
+    font-size: 18px;
+    color: white;
+}
+
+.ajoutDiv input:first-child{
+    margin-top: 20%;
+}
+
+
+.ajoutDiv button{
+    font-size: 15px;
+    border: none;
+    background: white;
+    outline: none;
+    color: black;
+    height: 30px;
+    width: 150px;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    transform: translateX(-43%);
+    transition: font-size 200ms;
+}
+
+.ajoutDiv button:hover{
+    font-size: 18px;
+}
+
+
+.bgajout{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(-45deg, rgba(216,160,32,1) 12%, rgba(255,255,255,1) 12%, rgba(255,255,255,1) 66%, rgba(216,160,32,1) 66%);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* ajouter un utilisateur */
+
+@keyframes tomber {
+    0%{
+        top: -70%;
+    }50%{
+        top: 25%;
+    }75%{
+        top: 18%;
+    }100%{
+        top: 20%;
+    }
+}
+
+@keyframes monter {
+    0%{
+        top: 20%;
+    }100%{top: -50%;}
+}
+
+@keyframes visible {
+    0%{
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
+}

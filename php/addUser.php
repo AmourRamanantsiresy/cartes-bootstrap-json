@@ -34,6 +34,6 @@
         //fonction qui nous ramène à un url définit en paramètre
         const goTo = (url)=>(location.href = url);
         //appelle de la fonction
-        goTo("../bootstrap card.php")
+        goTo("../index.php")
     </script>
 </html>

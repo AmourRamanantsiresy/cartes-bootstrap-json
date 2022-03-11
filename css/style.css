@@ -163,7 +163,7 @@ nav h2{
 
 
 .bgajout{
-    height: 100vh;
+    height: 200vh;
     width: 100vw;
     background: linear-gradient(-45deg, rgba(216,160,32,1) 12%, rgba(255,255,255,1) 12%, rgba(255,255,255,1) 66%, rgba(216,160,32,1) 66%);
     opacity: 0;
